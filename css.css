@@ -1,0 +1,269 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #474e5d; /* Цвет фона */
+    font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+
+
+
+/* The actual content */
+
+
+.header {
+    display: flex; /* Размещаем элементы в строку */
+    justify-content: space-between; /* Равномерное распределение элементов */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    padding: 10px 20px;
+    background-color: #333; /* Цвет фона хедера */
+    color: white; /* Цвет текста внутри хедера */
+}
+
+.questions {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-bottom: 100px;
+    background-color: #333;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.questions h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.questions li {
+    margin-bottom: 15px;
+}
+
+.questions li strong {
+    font-size: 14px;
+    color: #ff9f55;
+}
+
+.questions li p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Стиль заголовка в хедере */
+.header h1 {
+    margin: 0; /* Убираем отступы */
+    font-size: 38px;
+}
+
+/* Стили для меню в хедере */
+.site-menu {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Размещаем кнопки в строку */
+}
+
+.site-menu li {
+    margin-left: 20px; /* Расстояние между кнопками */
+}
+
+/* Стиль для кнопок */
+.site-menu button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.site-menu button:hover {
+    background-color: #45a049;
+}
+
+.name h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+
+.content-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Центрируем содержимое */
+    justify-content: center;
+
+}
+
+.main-inf {
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 200px; /* Уменьшенный размер фото */
+    height: 200px;
+    object-fit: cover; /* Адаптирует изображение */
+    border-radius: 50%; /* Круглое фото */
+    border: 5px solid #04AA6D; /* Акцентная рамка */
+    margin-bottom: 20px;
+}
+
+footer {
+    position: fixed; /* Закрепляет подвал */
+    bottom: 0; /* Располагает подвал внизу экрана */
+    left: 0;
+    width: 100%; /* Занимает всю ширину экрана */
+    background-color: #333; /* Тёмный фон */
+    color: #fff; /* Белый текст */
+    padding: 20px 30px; /* Увеличенные отступы */
+    font-family: Arial, sans-serif; /* Шрифт для текста */
+    z-index: 1000; /* Чтобы подвал был выше других элементов */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Более выразительная тень */
+    display: flex; /* Флекс-контейнер */
+    justify-content: space-between; /* Контакты справа */
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+footer .contacts {
+    display: flex; /* Используем флексбокс */
+    flex-direction: row; /* Вертикальное расположение контактов */
+    align-items: flex-end; /* Выравнивание контактов справа */
+    gap: 15px; /* Расстояние между контактами */
+}
+
+footer .contacts div {
+    display: flex; /* Включаем флексбокс для каждого блока контакта */
+    flex-direction: row; /* Горизонтальное расположение внутри блока */
+    align-items: center; /* Центрируем содержимое */
+    gap: 10px; /* Расстояние между иконкой и текстом */
+}
+
+footer .contacts div img {
+    width: 40px; /* Увеличенный размер изображений */
+    height: 40px; /* Увеличенный размер изображений */
+}
+
+footer .contacts div p {
+    font-size: 14px; /* Увеличенный размер текста */
+    margin: 0; /* Убираем отступы у абзаца */
+    word-wrap: break-word; /* Перенос длинных ссылок */
+}
+
+footer p.branding {
+    font-size: 16px; /* Размер текста для брендинга */
+    font-weight: bold; /* Выделение жирным */
+}
+
+@media (max-width: 600px) {
+    /* Центрирование контента и адаптация шрифтов */
+    .header {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 24px; /* Уменьшаем шрифт заголовка */
+    }
+
+    .site-menu {
+        flex-direction: column; /* Размещаем кнопки вертикально */
+        gap: 10px; /* Расстояние между кнопками */
+    }
+
+    .site-menu li {
+        margin-left: 0; /* Убираем отступы */
+    }
+
+    .site-menu button {
+        font-size: 16px; /* Уменьшаем размер кнопок */
+        padding: 10px;
+    }
+
+    /* Контакты в футере */
+    footer .contacts {
+        flex-direction: column; /* Вертикальное расположение контактов */
+        align-items: center; /* Центрирование элементов */
+    }
+
+    footer .contacts div {
+        margin-bottom: 15px; /* Отступ между контактами */
+    }
+
+    footer p.branding {
+        font-size: 14px; /* Уменьшение текста брендинга */
+        text-align: center; /* Центрирование текста */
+    }
+
+    /* Основной контент */
+    .content-main {
+        flex-direction: column; /* Вертикальное расположение */
+        padding: 10px;
+    }
+
+    .main-inf {
+        font-size: 20px; /* Уменьшаем размер шрифта */
+        text-align: center;
+        max-width: 100%; /* Растягиваем контент на всю ширину */
+    }
+
+    .profile-photo {
+        width: 150px; /* Уменьшаем фото */
+        height: 150px;
+        border-width: 3px; /* Уменьшаем толщину рамки */
+    }
+
+    .intro-text {
+        font-size: 16px; /* Уменьшаем шрифт текста */
+        line-height: 1.4; /* Уменьшаем межстрочный интервал */
+    }
+
+    /* Таймлайн */
+    .timeline {
+        margin: 0 10px; /* Уменьшаем отступы по бокам */
+    }
+
+    .container {
+        padding: 10px 20px; /* Уменьшаем внутренние отступы */
+    }
+
+    .content {
+        padding: 15px 20px; /* Уменьшаем отступы контента */
+        font-size: 16px; /* Увеличиваем текст для лучшей читаемости */
+    }
+
+    .timeline::after {
+        left: 10%; /* Смещение линии для компактности */
+    }
+
+    .left, .right {
+        width: 100%; /* Растягиваем блоки на всю ширину */
+        left: 0;
+    }
+
+    .left::before, .right::before {
+        display: none; /* Убираем стрелки */
+    }
+
+    .container::after {
+        left: 50%; /* Центрируем круг */
+        transform: translateX(-50%);
+    }
+}
+
+

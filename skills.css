@@ -1,0 +1,19 @@
+.html {width: 60%;height: 20%; background-color: #04AA6D;} /* Green */
+.css {width: 50%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #FF0000;} /* Red */
+.php {width: 10%; background-color: #808080;} /* Dark Grey */
+.python {width: 80%; background-color: #FF0000;}
+
+.html, .css, .js, .php, .python {
+    height: 40px; /* Увеличиваем высоту полосок */
+    margin: 10px 0; /* Добавляем промежутки между полосками */
+}
+@media (max-width: 600px) {
+    .html, .css, .js, .php, .python {
+        height: 30px; /* Уменьшаем высоту для мобильных устройств */
+        width: 100%; /* Занимаем всю ширину экрана */
+    }
+    .content-skills h3{
+        font-size:10px;
+    }
+}
